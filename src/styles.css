@@ -1,0 +1,15 @@
+/* styles */
+body {
+  background-color: white;
+  color: black;
+  cursor: default;
+  font-family: Times, serif;
+  text-align: center;
+}
+
+app-users {
+  background-color: black;
+  box-sizing: border-box;
+  flex-basis: calc(34% - 20px);
+  margin-top:21px;
+}

@@ -1,0 +1,33 @@
+/* Stylesheet */
+
+/* Contents */
+.container {
+    align-items: inherit;
+    display: flex;   
+}
+
+.image {
+    height: auto;  
+    max-width: 400px;  
+    margin-left: 0px;   
+    margin-bottom: 20px;   
+
+}
+
+.content {
+    flex: 1;                                 
+    flex-direction: column;     
+}
+
+.content strong {
+    font-size: 18px;  
+    margin: 0;      
+    margin-left: 20px;                    
+}
+
+.content p {              
+    font-size: 16px;           
+    line-height: 1.6; 
+    margin: 0px;   
+    margin-left: 20px;       
+}

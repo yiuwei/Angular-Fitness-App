@@ -1,0 +1,51 @@
+<!-- Create an Fitness App header -->
+<h1> Fitness App </h1>
+<br>
+<h2> Workout Program </h2>
+
+<!-- Loop through the items and show info -->
+   <div class="container">
+   <app-users 
+       *ngFor="let itemObject of appList" 
+       [value]="itemObject">
+    </app-users>
+ </div>
+
+ <!-- Create an BMI calculator input form -->
+ <h2>BMI Calculator</h2>
+ <h6>Caculate Your BMI</h6>
+ <div class="bmi-container">
+   <div class="content">
+     <div class="bmi-calculator">
+       <div>
+         <label for="height">Height (cm):</label>
+         <input type="number" [(ngModel)]="height" id="height">
+       </div>
+       <div>
+         <label for="weight">Weight (kg):</label>
+         <input type="number" [(ngModel)]="weight" id="weight">
+       </div>
+       <button (click)="calculateBMI()">Calculate BMI</button>
+       <!-- Display the bmi result -->
+       <div *ngIf="bmi">
+         <h3>Your BMI: {{ bmi.toFixed(2) }}</h3>
+         <p>{{ result || '' }}</p>
+       </div>
+     </div>
+   </div>
+   
+   <!-- Show the result -->
+   <div class="result">
+     <p>The benchmark to reach a healthy weight</p>
+     <p>Underweight: BMI less than 18.5</p>
+      <p>Normal weight: BMI between 18.5 and 24.9</p>
+      <p>Overweight: BMI between 25 and 29.9</p>
+      <p>Obesity: BMI 30 or higher</p>
+   </div>
+ </div>
+ <h3> Workout Goal: Complete an Trialthlon with 750m swim, a 20km bike and a 5km run. </h3>
+
+ <!-- Create a footer  -->
+<footer> All Right Reserved ® Fitness App. </footer>
+
+
